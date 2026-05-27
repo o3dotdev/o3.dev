@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
 
@@ -9,28 +9,20 @@ const sans = Inter({
   display: "swap",
 });
 
-const serif = Source_Serif_4({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://o3.dev"),
   title: {
     default: "o3.dev",
     template: "%s | o3.dev",
   },
-  description:
-    "A small home for upcoming software projects, notes, and experiments.",
+  description: "Open-source by default. Explore o3.dev on GitHub.",
   applicationName: "o3.dev",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "o3.dev",
-    description:
-      "A small home for upcoming software projects, notes, and experiments.",
+    description: "Open-source by default. Explore o3.dev on GitHub.",
     url: "https://o3.dev",
     siteName: "o3.dev",
     type: "website",
@@ -38,8 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "o3.dev",
-    description:
-      "A small home for upcoming software projects, notes, and experiments.",
+    description: "Open-source by default. Explore o3.dev on GitHub.",
   },
 };
 
@@ -49,7 +40,7 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable}`}>
+    <html lang="en" className={sans.variable}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
