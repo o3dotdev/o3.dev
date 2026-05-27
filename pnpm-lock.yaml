@@ -17,7 +17,7 @@ importers:
         specifier: 6.0.3
         version: 6.0.3
 
-  apps/web:
+  apps/site:
     dependencies:
       next:
         specifier: 16.2.6

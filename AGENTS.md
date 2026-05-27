@@ -3,14 +3,14 @@
 ## Project
 
 - `o3.dev` is a pnpm monorepo for the root landing page and future subdomain apps.
-- The current deployable app is `apps/web`, a static-first Next.js App Router site for the root domain.
+- The current deployable app is `apps/site`, a static-first Next.js App Router site for the root domain.
 - Keep shared code in `packages/*` only when there is a real second consumer; `packages/.gitkeep` is intentional for now.
 
 ## Stack
 
 - Use Node `24.x` and pnpm from the root `packageManager` field.
 - Use pnpm workspaces and Turborepo commands from the repository root.
-- `apps/web` uses Next.js, React, TypeScript, Tailwind CSS, ESLint flat config, and Prettier.
+- `apps/site` uses Next.js, React, TypeScript, Tailwind CSS, ESLint flat config, and Prettier.
 
 ## Commands
 
@@ -31,13 +31,13 @@
 
 ## Frontend Rules
 
-- Default to server components in `apps/web`; add client components only when interactivity requires them.
+- Default to server components in `apps/site`; add client components only when interactivity requires them.
 - Keep the landing page simple until product copy and content are provided.
 - Preserve good metadata, accessible landmarks, responsive layout, and static rendering for the root page.
 - Avoid inventing claims about projects, products, or timelines.
 
 ## Deployment
 
-- Vercel project root is `apps/web`.
+- Vercel project root is `apps/site`.
 - Production domain is intended to be `o3.dev`.
 - Future independently deployed surfaces should be separate apps under `apps/*`.

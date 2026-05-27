@@ -1,6 +1,6 @@
 # o3.dev
 
-Monorepo for `o3.dev`, starting with a single Next.js landing page in `apps/web`.
+Monorepo for `o3.dev`, starting with a single Next.js landing page in `apps/site`.
 
 ## Stack
 
@@ -16,7 +16,7 @@ Monorepo for `o3.dev`, starting with a single Next.js landing page in `apps/web`
 
 ```txt
 apps/
-  web/        # Root-domain landing page for o3.dev
+  site/       # Root-domain landing page for o3.dev
 packages/    # Shared packages will live here when needed
 ```
 
@@ -28,7 +28,7 @@ Install dependencies:
 pnpm install
 ```
 
-Run the web app locally:
+Run the site app locally:
 
 ```sh
 pnpm dev
@@ -45,7 +45,7 @@ pnpm format:check
 
 ## Vercel
 
-Import this repository as a monorepo project and set the Vercel project root directory to `apps/web`.
+Import this repository as a monorepo project and set the Vercel project root directory to `apps/site`.
 
 Recommended settings:
 
