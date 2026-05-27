@@ -39,40 +39,17 @@ export default function Home() {
         </header>
 
         <section className="flex flex-1 flex-col items-center justify-center pb-28 pt-10 text-center sm:pb-36">
-          <div className="grid w-fit grid-cols-[max-content_max-content_max-content] items-baseline text-left">
-            <h1
-              aria-label="o3.dev"
-              className="col-span-3 grid grid-cols-subgrid text-6xl font-semibold leading-none tracking-normal sm:text-8xl md:text-[8.75rem] lg:text-[10rem]"
-            >
-              <span aria-hidden className="justify-self-end">
-                o3
-              </span>
-              <span aria-hidden className="justify-self-center" data-title-dot>
-                .
-              </span>
-              <span aria-hidden className="justify-self-start">
-                dev
-              </span>
-            </h1>
-            <a
-              aria-label="Open-source by default."
-              className="col-start-1 col-end-3 -mt-2 grid grid-cols-subgrid text-2xl font-medium leading-tight tracking-normal transition-opacity hover:opacity-60 sm:text-[2.65rem]"
-              href="https://github.com/o3dotdev"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <span aria-hidden className="justify-self-end">
-                Open-source by default
-              </span>
-              <span
-                aria-hidden
-                className="justify-self-center"
-                data-subtitle-dot
-              >
-                .
-              </span>
-            </a>
-          </div>
+          <h1 className="text-6xl font-semibold leading-none tracking-normal sm:text-8xl md:text-[8.75rem] lg:text-[10rem]">
+            o3.dev
+          </h1>
+          <a
+            className="mt-1 text-2xl font-medium leading-tight tracking-normal transition-opacity hover:opacity-60 sm:text-3xl"
+            href="https://github.com/o3dotdev"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Open-source by default.
+          </a>
         </section>
       </div>
     </main>
