@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[color:var(--background)] px-6 text-[color:var(--foreground)] sm:px-10">
       <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col">
-        <header className="flex h-28 items-center justify-between sm:h-32">
+        <header className="flex h-20 items-center justify-between sm:h-32">
           <Link
             className="text-2xl font-semibold tracking-normal transition-opacity hover:opacity-70"
             href="/"
