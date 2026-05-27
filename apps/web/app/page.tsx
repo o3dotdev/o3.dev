@@ -39,9 +39,6 @@ export default function Home() {
         </header>
 
         <section className="flex flex-1 flex-col items-center justify-center pb-28 pt-10 text-center sm:pb-36">
-          <h1 className="text-6xl font-semibold leading-none tracking-normal sm:text-8xl md:text-[8.75rem] lg:text-[10rem]">
-            o3.dev
-          </h1>
           <a
             className="text-2xl font-medium leading-tight tracking-normal transition-opacity hover:opacity-60 sm:text-3xl"
             href="https://github.com/o3dotdev"
