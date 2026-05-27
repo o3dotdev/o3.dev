@@ -43,7 +43,7 @@ export default function Home() {
             o3.dev
           </h1>
           <a
-            className="mt-1 text-2xl font-medium leading-tight tracking-normal transition-opacity hover:opacity-60 sm:text-3xl"
+            className="text-2xl font-medium leading-tight tracking-normal transition-opacity hover:opacity-60 sm:text-3xl"
             href="https://github.com/o3dotdev"
             rel="noreferrer"
             target="_blank"
